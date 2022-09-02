@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         builder: (context, state) => const Page2(),
         routes: [
           GoRoute(
-            path: 'form',
+            path: 'form/:id',
             builder: (context, state) {
               final id = state.params['id'];
               return Form(
@@ -99,7 +99,7 @@ class Page2 extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                context.push('/page2/form');
+                context.push('/page2/form/1234');
               },
               child: const Text('Load Form'),
             ),
