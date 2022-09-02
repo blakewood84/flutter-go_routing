@@ -37,6 +37,7 @@ class PersonsProvider extends ChangeNotifier {
 
   Future<bool> addPerson(Person person) async {
     list.add(person);
+    notifyListeners();
     return Future.value(true);
   }
 }

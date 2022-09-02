@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
           IconButton(
             icon: const Icon(Icons.add),
             onPressed: () {
-              context.go('/person/0/person_form/1234');
+              context.push('/person/0/person_form/1234');
             },
           )
         ],
