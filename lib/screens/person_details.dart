@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:go_routing/models/person.dart';
 
-class Page2 extends StatefulWidget {
-  const Page2({Key? key}) : super(key: key);
+class PersonDetails extends StatefulWidget {
+  const PersonDetails({
+    required this.person,
+    Key? key,
+  }) : super(key: key);
+
+  final Person? person;
 
   @override
-  State<Page2> createState() => _Page2State();
+  State<PersonDetails> createState() => _PersonDetailsState();
 }
 
-class _Page2State extends State<Page2> {
-  void _onTap() async {}
+class _PersonDetailsState extends State<PersonDetails> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
