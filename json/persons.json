@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Tom",
+      "age": 22,
+      "description": "A good person."
+    },
+    {
+      "name": "John",
+      "age": 30,
+      "description": "An apostle."
+    },
+    {
+      "name": "Mark",
+      "age": 24,
+      "description": "A prophet."
+    }
+]
