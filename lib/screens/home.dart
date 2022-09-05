@@ -118,6 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     return Container(
                       margin: const EdgeInsets.only(top: 10),
                       child: ListTile(
+                        onTap: () => context.push('/person/${person.name}'),
                         shape: RoundedRectangleBorder(
                           side: const BorderSide(color: Colors.black, width: 1),
                           borderRadius: BorderRadius.circular(5),

@@ -40,7 +40,7 @@ class _PersonDetailsState extends State<PersonDetails> {
         leading: IconButton(
           icon: const Icon(Icons.chevron_left),
           onPressed: () {
-            context.go('/');
+            context.pop();
           },
         ),
       ),
