@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   go_router: ^4.3.0
-  meta: ^1.8.0
+  meta: ^1.7.0
   provider: ^6.0.3
 
 dev_dependencies:

@@ -6,8 +6,12 @@ mixin CanMakeGetCall {
   String get url;
 
   @useResult
-  Future<String> getString() => getUrl(url).then(
+  Future<List<dynamic>> getDataDecoded() => getUrl(url)
+      .then(
         (resp) => resp.transform(utf8.decoder).join(),
+      )
+      .then(
+        (value) => jsonDecode(value),
       );
 }
 
