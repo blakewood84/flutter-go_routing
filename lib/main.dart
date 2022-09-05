@@ -19,7 +19,11 @@ class MyApp extends StatelessWidget {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const MyHomePage(),
+        builder: (context, state) {
+          final name = state.extra;
+          print('NAME: $name');
+          return const MyHomePage();
+        },
       ),
       GoRoute(
         path: '/search',

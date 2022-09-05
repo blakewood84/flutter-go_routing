@@ -32,7 +32,7 @@ class _PersonFormState extends State<PersonForm> {
       final person = Person(name: name, age: age, description: description);
 
       await context.read<PersonsProvider>().addPerson(person);
-      context.pop();
+      context.go('/', extra: person.name);
     }
   }
 
